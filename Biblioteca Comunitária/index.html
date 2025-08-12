@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca Digital - Estante Virtual</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="loginScreen">
+      <div class="container">
+        <div class="login-container">
+          <div class="card shadow-lg border-0">
+            <div class="card-body p-4">
+              <h2 class="card-title text-center mb-4 text-primary fw-bold">
+                <i class="bi bi-book"></i> Biblioteca Digital
+              </h2>
+              <form id="loginForm">
+                <div class="mb-3">
+                  <label for="username" class="form-label">Usuário:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Senha:</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  Entrar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mainApp" class="hidden">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <i class="bi bi-book-fill"></i> Biblioteca Digital
+            </a>
+            <div class="d-flex align-items-center">
+              <span class="badge bg-primary me-3 fs-6 px-3 py-2" id="bookCount"
+                >0 livros na estante</span
+              >
+              <button
+                class="btn btn-outline-secondary me-2"
+                onclick="toggleTheme()"
+              >
+                <i class="bi bi-moon-fill" id="themeIcon"></i>
+              </button>
+              <button class="btn btn-outline-danger" onclick="logout()">
+                <i class="bi bi-box-arrow-right"></i> Sair
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="container mt-4">
+        <section>
+          <nav>
+            <ul class="nav nav-tabs mb-4" id="mainTabs">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  data-bs-toggle="tab"
+                  href="#catalogoTab"
+                >
+                  <i class="bi bi-collection"></i> Catálogo de Livros
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#estanteTab">
+                  <i class="bi bi-bookmark-heart"></i> Minha Estante
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <article class="tab-content">
+            <div class="tab-pane fade show active" id="catalogoTab">
+              <div class="row mb-4">
+                <div class="col-md-6">
+                  <label for="searchInput" class="form-label"
+                    >Buscar por título:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="searchInput"
+                    placeholder="Digite o título do livro..."
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="genreFilter" class="form-label"
+                    >Filtrar por gênero:</label
+                  >
+                  <select class="form-select" id="genreFilter">
+                    <option value="">Todos os gêneros</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Ficção Científica">Ficção Científica</option>
+                    <option value="Suspense Psicológico">
+                      Suspense psicológico
+                    </option>
+                    <option value="Suspense">Suspense</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Filosofia Política">
+                      Filosofia política
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row" id="booksList"></div>
+            </div>
+
+            <div class="tab-pane fade" id="estanteTab">
+              <div class="row">
+                <div class="col-12">
+                  <h3>Minha Estante Virtual</h3>
+                  <p class="text-muted">
+                    Aqui estão os livros que você salvou para ler:
+                  </p>
+                </div>
+              </div>
+              <div class="row" id="estanteList"></div>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="mt-5 p-3 text-center bg-light text-muted">
+        <p>© 2024 Biblioteca Digital - Todos os direitos reservados.</p>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

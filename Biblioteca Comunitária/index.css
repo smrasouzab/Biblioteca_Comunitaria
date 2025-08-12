@@ -1,0 +1,52 @@
+[data-theme="dark"] {
+  background-color: #212529 !important;
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .card {
+  background-color: #343a40 !important;
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .navbar {
+  background-color: #343a40 !important;
+}
+
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select {
+  background-color: #495057 !important;
+  color: #ffffff !important;
+  border-color: #6c757d !important;
+}
+
+[data-theme="dark"] .nav-link:not(.active) {
+  color: #ffffff !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.estante-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+}
+
+.book-card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+.book-cover {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
