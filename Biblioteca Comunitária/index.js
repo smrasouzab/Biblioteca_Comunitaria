@@ -156,11 +156,13 @@ function createBookCard(livro, isEstante = false) {
                     <h5 class="card-title">${livro.titulo}</h5>
                     <p class="card-text text-muted mb-2"><strong>Autor:</strong> ${livro.autor}</p>
                     <span class="badge bg-secondary mb-2">${livro.genero}</span>
-                    <p class="card-text mt-auto">${livro.descricao}</p>
-                    <div class="mt-3">
+                    <div class="d-flex flex-column flex-grow-1">
+                    <p class="card-text">${livro.descricao}</p>
+                    <div class="mt-3 mt-auto">
                         ${actionButton}
                         ${toggleLidoButton}
                     </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -208,8 +210,10 @@ function loadEstante() {
   }
 
   estanteList.innerHTML = "";
-  livrosDoUsuario.forEach((livro) => {
-    estanteList.innerHTML += createBookCard(livro, true);
+  livrosDoUsuario.forEach((livroSalvo) => {
+    const livroCompleto = livrosDisponiveis.find((l) => l.id === livroSalvo.id);
+    const livroParaCard = { ...livroCompleto, lido: livroSalvo.lido };
+    estanteList.innerHTML += createBookCard(livroParaCard, true);
   });
 }
 
@@ -278,8 +282,8 @@ function addToEstante(livroId) {
     userBooks[currentUser] = [];
   }
 
-  const livroComStatus = { ...livro, lido: false };
-  userBooks[currentUser].push(livroComStatus);
+  const livroParaEstante = { id: livro.id, lido: false };
+  userBooks[currentUser].push(livroParaEstante);
 
   localStorage.setItem("userBooks", JSON.stringify(userBooks));
 

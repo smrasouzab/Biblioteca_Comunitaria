@@ -12,6 +12,10 @@
   color: #ffffff !important;
 }
 
+[data-theme="dark"] p {
+  color: #ffffff !important;
+}
+
 [data-theme="dark"] .navbar {
   background-color: #343a40 !important;
 }
@@ -52,6 +56,17 @@
   margin: 100px auto;
 }
 
+.book-card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-card .card-text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: justify; 
+}
+
 .book-card:hover {
   transform: translateY(-2px);
   transition: transform 0.2s ease;
@@ -64,3 +79,4 @@
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
