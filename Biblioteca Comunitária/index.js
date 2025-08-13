@@ -10,8 +10,7 @@ const livrosDisponiveis = [
     genero: "Suspense Psicológico",
     descricao:
       "Libby Day, uma mulher traumatizada pelo assassinato de sua família, é forçada a revisitar o passado quando um grupo de entusiastas de crimes reais a questiona sobre o crime.",
-    imagemUrl:
-      "https://m.media-amazon.com/images/I/61txsuGky4L._UF1000,1000_QL80_.jpg",
+    imagem: "../img/capaLugaresEscuros.jpg",
   },
   {
     id: 2,
@@ -20,8 +19,7 @@ const livrosDisponiveis = [
     genero: "Terror",
     descricao:
       "Uma reverenda se muda com a filha para uma cidade pequena e descobre que o local esconde uma lenda sombria sobre garotas em chamas, revelando segredos aterrorizantes do passado.",
-    imagemUrl:
-      "https://m.media-amazon.com/images/I/91hnRlcVHPL._UF1000,1000_QL80_.jpg",
+    imagem: "../img/capaGarotasEmChamas.jpg",
   },
   {
     id: 3,
@@ -30,8 +28,7 @@ const livrosDisponiveis = [
     genero: "Suspense",
     descricao:
       " O livro segue um grupo de amigos que, na infância, seguia desenhos de giz que levavam a descobertas macabras. Anos depois, um novo desenho de giz reabre um mistério do passado.",
-    imagemUrl:
-      "https://m.media-amazon.com/images/I/91o6FMAy8UL._UF1000,1000_QL80_.jpg",
+    imagem: "../img/capaHomemDeGiz.jpg",
   },
   {
     id: 4,
@@ -40,8 +37,7 @@ const livrosDisponiveis = [
     genero: "Suspense Psicológico",
     descricao:
       "Uma repórter com problemas pessoais retorna à sua cidade natal para cobrir o assassinato de duas jovens. Ela precisa confrontar seus próprios traumas enquanto investiga o crime.",
-    imagemUrl:
-      "https://m.media-amazon.com/images/M/MV5BYTY4OTQ0N2EtMDExMC00NTYzLTk0NmItYTRjNDYxOWU5ZDY3XkEyXkFqcGc@._V1_.jpg",
+    imagem: "../img/capaSharpObjects.jpg",
   },
   {
     id: 5,
@@ -50,8 +46,7 @@ const livrosDisponiveis = [
     genero: "Filosofia Política",
     descricao:
       "Publicada em 1651, a obra é um dos tratados mais influentes da história da filosofia, discutindo a estrutura da sociedade e a necessidade de um contrato social para evitar o caos.",
-    imagemUrl:
-      "https://http2.mlstatic.com/D_NQ_NP_983540-MLU69037970178_042023-O.webp",
+    imagem: "../img/capaLeviata.webp",
   },
   {
     id: 6,
@@ -60,8 +55,7 @@ const livrosDisponiveis = [
     genero: "Filosofia Política",
     descricao:
       "Escrito no século XVI, o livro é um guia sobre como os governantes devem conquistar, manter e exercer o poder, abordando a política de forma pragmática e realista.",
-    imagemUrl:
-      "https://m.media-amazon.com/images/I/71VSAeGixmL._UF894,1000_QL80_.jpg",
+    imagem: "../img/capaOPrincipe.jpg",
   },
   {
     id: 7,
@@ -70,7 +64,7 @@ const livrosDisponiveis = [
     genero: "Romance",
     descricao:
       "Merit Voss, cansada dos segredos de sua família disfuncional, decide que vai desaparecer, mas antes, planeja revelar todas as verdades que a família esconde.",
-    imagemUrl: "https://m.media-amazon.com/images/I/814pUv-EGbL.jpg",
+    imagem: "../img/capaAsMilPartesDoMeuCoracao.jpg",
   },
   {
     id: 8,
@@ -79,8 +73,7 @@ const livrosDisponiveis = [
     genero: "Biografia",
     descricao:
       "Uma biografia detalhada sobre a vida e os casos mais famosos de Ed e Lorraine Warren, o casal de demonologistas mais conhecido do mundo.",
-    imagemUrl:
-      "https://m.media-amazon.com/images/I/91Cu2hkpMlL._UF894,1000_QL80_.jpg",
+    imagem: "../img/capaEdeLorraineWarren.jpg",
   },
   {
     id: 9,
@@ -89,8 +82,7 @@ const livrosDisponiveis = [
     genero: "Ficção Científica",
     descricao:
       "Harper Connelly, uma detetive com a habilidade de sentir a causa da morte de pessoas, investiga o caso de um assassino em série que torturou e matou garotos.",
-    imagemUrl:
-      "https://m.media-amazon.com/images/I/91VagCO+6UL._UF1000,1000_QL80_.jpg",
+    imagem: "../img/capaFrioDoAlem.jpg",
   },
   {
     id: 10,
@@ -99,8 +91,7 @@ const livrosDisponiveis = [
     genero: "Ficção Científica",
     descricao:
       "Numa sociedade futurista, livros são proibidos e queimados. O protagonista, Guy Montag, é um bombeiro que tem o trabalho de incinerar livros e que, um dia, começa a questionar seu papel.",
-    imagemUrl:
-      "https://m.media-amazon.com/images/I/51tAD6LyZ-L._UF1000,1000_QL80_.jpg",
+    imagem: "../img/capaFahrenheit451.jpg",
   },
   {
     id: 11,
@@ -109,8 +100,7 @@ const livrosDisponiveis = [
     genero: "Romance",
     descricao:
       "A protagonista Aza Holmes lida com transtornos psicológicos enquanto tenta resolver o mistério do desaparecimento de um bilionário.",
-    imagemUrl:
-      "https://m.media-amazon.com/images/I/81jO4GHLmuL._UF1000,1000_QL80_.jpg",
+    imagem: "../img/capaTartarugasAteLaEmbaixo.jpg",
   },
   {
     id: 12,
@@ -119,8 +109,7 @@ const livrosDisponiveis = [
     genero: "Suspense Psicológico",
     descricao:
       "A vida de Quinn muda quando sua colega de quarto, Esther, desaparece misteriosamente, deixando para trás uma carta intrigante. Enquanto tenta descobrir o que aconteceu, Quinn percebe que talvez não conhecesse a amiga tão bem quanto pensava.",
-    imagemUrl:
-      "https://m.media-amazon.com/images/I/912SIZfykfL._UF1000,1000_QL80_.jpg",
+    imagem: "../img/capaNaoChoreNao.jpg",
   },
 ];
 
@@ -133,14 +122,15 @@ function createBookCard(livro, isEstante = false) {
     : false;
 
   const actionButton = isEstante
-    ? `<button class="btn btn-outline-danger btn-sm" onclick="removeFromEstante(${livro.id})">
-               <i class="bi bi-trash"></i> Remover
-           </button>`
-    : `<button class="btn btn-primary btn-sm" onclick="addToEstante(${
-        livro.id
-      })" ${isInEstante ? "disabled" : ""}>
-               <i class="bi bi-plus-circle"></i> Adicionar à Estante
-           </button>`;
+    ? `<div class="d-grid gap-2 justify-content-center">
+    <button class="btn btn-outline-danger btn-sm" onclick="removeFromEstante(${livro.id})">
+               <i class="bi bi-trash"></i> Remover</button>
+               </div>`
+    : `<div class="d-grid gap-2 justify-content-center">
+    <button class="btn btn-outline-primary" onclick="addToEstante(${
+      livro.id
+    })" ${isInEstante ? "disabled" : ""}>Adicionar à Estante</button>
+      </div>`;
 
   const lidoBadge = isLido
     ? `<span class="badge bg-success estante-badge"><i class="bi bi-check-circle"></i> Lido</span>`
@@ -161,7 +151,7 @@ function createBookCard(livro, isEstante = false) {
         <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
             <div class="card book-card h-100 position-relative shadow-sm">
                 ${lidoBadge}
-                <img src="${livro.imagemUrl}" class="card-img-top book-cover" alt="Capa do Livro ${livro.titulo}">
+                <img src="${livro.imagem}" class="card-img-top book-cover" alt="Capa do Livro ${livro.titulo}">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">${livro.titulo}</h5>
                     <p class="card-text text-muted mb-2"><strong>Autor:</strong> ${livro.autor}</p>

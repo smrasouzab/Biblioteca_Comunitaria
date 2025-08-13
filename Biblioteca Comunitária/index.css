@@ -8,8 +8,21 @@
   color: #ffffff !important;
 }
 
+[data-theme="dark"] .navbar-brand {
+  color: #ffffff !important;
+}
+
 [data-theme="dark"] .navbar {
   background-color: #343a40 !important;
+}
+
+[data-theme="dark"] ::placeholder {
+  color: #b6c2cc !important;
+}
+
+[data-theme="dark"] footer {
+  background-color: #343a40 !important;
+  color: #ffffff !important;
 }
 
 [data-theme="dark"] .form-control,
@@ -45,8 +58,9 @@
 }
 
 .book-cover {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 450px;
   object-fit: cover;
   border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
